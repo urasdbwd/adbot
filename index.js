@@ -12,6 +12,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+const inviteRegex = /(\w+) has invited you to join /;
 function generateHWID() {
     // Get the user information and network interfaces
     const userInfo = os.userInfo();

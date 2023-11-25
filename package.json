@@ -16,8 +16,7 @@
   ],
   "pkg": {
     "assets": [
-      "./index.js",
-      "./config.js"
+      "./index.js"
     ]
   },
   "author": "",
