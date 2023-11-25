@@ -52,7 +52,7 @@ let configs = require("./config.js");
 
 function updateConfig() {
    const updatedConfig = "module.exports = " + JSON.stringify(configs, null, 4);
-    fs.writeFile(configPath, updatedConfig, 'utf8', (err) => {
+    fs.writeFile("./config.js", updatedConfig, 'utf8', (err) => {
         if (err) {
             console.error(err);
             return;
