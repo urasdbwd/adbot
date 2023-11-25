@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 const os = require('os');
-const axios = require('axios/dist/node/axios.cjs');
+const axios = require('axios');
 const crypto = require('crypto');
 const rl = readline.createInterface({
     input: process.stdin,
