@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 const os = require('os');
-const axios = require('axios');
+const axios = require('axios/dist/node/axios.cjs');
 const crypto = require('crypto');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -47,8 +47,8 @@ const messages = [
     '1/2 vc grinding stats /p me',
     
 ];
-const configPath = path.join(__dirname, './config.js');
-let configs = require(configPath);
+
+let configs = require("./config.js");
 
 function updateConfig() {
    const updatedConfig = "module.exports = " + JSON.stringify(configs, null, 4);
@@ -57,8 +57,8 @@ function updateConfig() {
             console.error(err);
             return;
         }
-        delete require.cache[require.resolve(configPath)];
-        configs = require(configPath);
+        delete require.cache[require.resolve("./config.js")];
+        configs = require("./config.js");
     });
 }
 
