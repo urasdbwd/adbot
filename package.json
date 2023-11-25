@@ -1,0 +1,32 @@
+{
+  "name": "adbot",
+  "version": "0.0.1",
+  "description": "idk",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "compile": "pkg -t node18-win index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "npne"
+  ],
+  "pkg": {
+    "assets": [
+      "./index.js",
+      "./config.js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "discord-webhook-node": "^1.1.8",
+    "mineflayer": "^4.14.0",
+    "os": "^0.1.2",
+    "pkg": "^5.8.1"
+  }
+}
